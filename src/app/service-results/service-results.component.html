@@ -1,0 +1,45 @@
+<div class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource1" matSort>
+      <!-- System Column -->
+      <ng-container matColumnDef="System">
+        <mat-header-cell *matHeaderCellDef> System </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.System}} </mat-cell>
+      </ng-container>
+    
+      <!-- Object_Class Column -->
+      <ng-container matColumnDef="Object_Class">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Object_Class </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Object_Class}} </mat-cell>
+      </ng-container>
+    
+      <!-- Object_Id Column -->
+      <ng-container matColumnDef="Object_Id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Object_Id </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Object_Id}} </mat-cell>
+      </ng-container>
+    
+      <!-- Change_No Column -->
+      <ng-container matColumnDef="Change_No">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Change_No </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Change_No}} </mat-cell>
+      </ng-container>
+    
+      <!-- Table_Name Column -->
+      <ng-container matColumnDef="Table_Name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Table_Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Table_Name}} </mat-cell>
+      </ng-container>
+    
+      <!-- Field_Name Column -->
+      <ng-container matColumnDef="Field_Name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Field_Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.Field_Name}} </mat-cell>
+      </ng-container>
+    
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>
+   <!-- <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
+-->
+    

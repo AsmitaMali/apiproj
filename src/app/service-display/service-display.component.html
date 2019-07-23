@@ -1,0 +1,53 @@
+<form class="normal-form" > 
+    <mat-grid-list cols="2" rowHeight="100px" fxLayoutAlign="start start" fxLayoutAlign="space-evenly none">
+        <mat-grid-tile [colspan] ="1" [rowspan]="1">
+            <div class="controles-container">
+                <mat-form-field>
+                    <input  matInput placeholder="Business Group">
+                  </mat-form-field>
+                  <mat-form-field>
+                      <input  matInput placeholder="Project Name">
+                    </mat-form-field>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan] ="1" [rowspan]="1">
+             <div class="controles-container">    
+                <mat-form-field>
+                    <input matInput placeholder="Criticality">
+                  </mat-form-field>
+                  <mat-form-field>
+                      <input  matInput placeholder="Owner">
+                    </mat-form-field>  
+              </div>
+        </mat-grid-tile>  
+        <mat-grid-tile [colspan] = "2">
+              <div class="controles-container" >    
+                         <mat-form-field>
+                             <textarea matInput placeholder="Short Description"></textarea>
+                          </mat-form-field>
+              </div>
+        </mat-grid-tile>  
+                          
+          <mat-grid-tile [colspan] = "2">
+              <div class="controles-container">    
+                <mat-form-field>
+                    <textarea matInput placeholder="Long Description"></textarea>
+                </mat-form-field>
+              </div>
+          </mat-grid-tile>  
+                          
+        <mat-grid-tile [colspan] = "2">
+            <div class="controles-container">    
+                <mat-form-field>
+                  <textarea matInput placeholder="Risk & Resolution"></textarea>
+                </mat-form-field>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>  
+            <div class="button-row">
+              <button mat-raised-button color="primary" (click) ="onSubmit()"> Execute </button>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>                           
+  </form>                     
+  
